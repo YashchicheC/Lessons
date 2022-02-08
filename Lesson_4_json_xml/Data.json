@@ -1,0 +1,34 @@
+{
+  "students":
+  [
+    {
+      "student_1":
+      {
+        "name": "Anna",
+        "qualification": "trainee",
+        "experience": false,
+        "practice": null,
+        "skills":
+                 ["English language", "Adaptation"]
+      },
+      "student_2":
+      {
+        "name": "Bob",
+        "qualification": "junior",
+        "experience": true,
+        "practice": 3,
+        "skills":
+                 ["Teamwork ", "The work without a mentor "]
+      },
+      "student_3":
+      {
+        "name": "John",
+        "qualification": "middle",
+        "experience": true,
+        "practice": 8,
+        "skills":
+                  ["Knowledge of C# ", "Management"]
+      }
+    }
+  ]
+}

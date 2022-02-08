@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+    <student_1>
+        <name> "Anna"</name>>
+        <qualification>"trainee"</qualification>
+        <experience> false </experience>
+        <practice> null </practice>
+        <skills>:
+        ["English language", "Adaptation"]
+        </skills>
+    </student_1>
+
+    <student_2>
+        <name> "Bob"</name>>
+        <qualification>"junior"</qualification>
+        <experience> true </experience>
+        <practice> 3 </practice>
+        <skills>:
+            ["Teamwork ", "The work without a mentor "]
+        </skills>
+    </student_2>
+
+    <student_3>
+        <name> "John"</name>>
+        <qualification>"middle"</qualification>
+        <experience> true </experience>
+        <practice> 8 </practice>
+        <skills>:
+            ["Knowledge of C# ", "Management"]
+        </skills>
+    </student_3>
+</students>
