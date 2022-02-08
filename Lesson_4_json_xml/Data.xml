@@ -17,7 +17,8 @@
         <experience> true </experience>
         <practice> 3 </practice>
         <skills>:
-            ["Teamwork ", "The work without a mentor "]
+            <skill>Teamwork </skill>
+            <skill>The work without a mentor</skill>
         </skills>
     </student_2>
 
