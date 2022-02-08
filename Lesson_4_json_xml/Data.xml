@@ -6,7 +6,7 @@
         <qualification>"trainee"</qualification>
         <experience> false </experience>
         <practice> null </practice>
-        <skills>:
+        <skills>
         ["English language", "Adaptation"]
         </skills>
     </student_1>
@@ -16,7 +16,7 @@
         <qualification>"junior"</qualification>
         <experience> true </experience>
         <practice> 3 </practice>
-        <skills>:
+        <skills>
             <skill>Teamwork </skill>
             <skill>The work without a mentor</skill>
         </skills>
@@ -27,7 +27,7 @@
         <qualification>"middle"</qualification>
         <experience> true </experience>
         <practice> 8 </practice>
-        <skills>:
+        <skills>
             ["Knowledge of C# ", "Management"]
         </skills>
     </student_3>
