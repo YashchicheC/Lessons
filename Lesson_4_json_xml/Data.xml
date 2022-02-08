@@ -5,7 +5,7 @@
         <name> "Anna"</name>>
         <qualification>"trainee"</qualification>
         <experience> false </experience>
-        <practice> null </practice>
+        <practice>  </practice>
         <skills>
         ["English language", "Adaptation"]
         </skills>
