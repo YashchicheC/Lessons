@@ -1,11 +1,12 @@
 public class SecondClass
 {
-    int i = 11111;
-    String str = String.format("---<%s>---", i);
 
-    public  String methodPrint(String[] args)
+
+    public  static String methodPrint()
     {
-        System.out.printf(args);
+        int i = 11111;
+        String str = String.format("---<%s>---", i);
+        System.out.printf(str);
         return str;
     }
 }
