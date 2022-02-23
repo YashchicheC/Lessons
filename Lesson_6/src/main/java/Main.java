@@ -17,5 +17,7 @@ public class Main
         System.out.println("result2-2 = " + result2);
         System.out.println("result1 > result2 second comparison = " + (result1 > result2));
         System.out.println("result1 or result2 are multiple of 2 = " + (result1%2 ==0 || result2%2 ==0));
+        String result = ("".length() == 6) ? "First" : "Second";
+        System.out.println("result" + result);
     }
 }
