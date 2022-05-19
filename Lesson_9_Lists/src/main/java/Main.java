@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+import java.util.*;
 
 public class Main
 {
+    static ArrayList<String> charlist = new ArrayList<>();
 
     public static void main(String[] args)
     {
@@ -15,32 +17,48 @@ public class Main
         mainList.add("song");
         mainList.add("chacha");
 
-        int counter = 0;
-
-        ArrayList<Character> charList = new ArrayList<>();
-
-        for (int i = 0; i < mainList.toString().length();i++)
+        for (int i = 0; i < mainList.size(); i++)
         {
-            charList.add(mainList.toString().charAt(i));
+            String s = mainList.get(i); //одно слово с пробелом
+            s = s.replace(" ", "");//удаляем пробел в слове
+            CountCharsAndPut(s); //скармливаем методу полученную строку
         }
-        for (int i = 0; i < charList.size();i++)
+
+        Set <Character> sett = new HashSet<>(); //для финальных букв
+
+        for (int i = 0; i < charlist.size(); i++)
         {
-            for (int y = 0; y < charList.size(); y++)
+            char[] finalArray = charlist.get(i).toCharArray();
+
+            for (int j = 0; j < finalArray.length; j++)
             {
-                if (charList.get(i) == charList.get(y))
+                sett.add(finalArray[j]);
+            }
+        }
+        System.out.println(sett);
+    }
+
+    private static void CountCharsAndPut(String str)
+    {
+        for(int i = 0; i < str.length(); i++)
+        {
+            int countChar = 0;
+
+            for (int j = 0; j < str.length(); j++)
+            {
+                if (str.charAt(i) == str.charAt(j)) //проверка буквы на наличие дубликати в слове
                 {
-                    charList.remove(y);
-                    if (charList.contains("*"))
-                    {
-                        charList.remove(y);
-                        charList.toString().replaceAll(" ", "*");
-                    }
+                    countChar++;
                 }
             }
-
+            if (countChar % 2 != 0) //если буква не нашла свой дулбликат то выходим с цикла, выбрасывая из CountCharsAndPut
+            {
+                return;
+            }
         }
-        charList.toString().trim();
-        System.out.println(charList);
-
+        charlist.add(str); //список слово по критерию "каждая буква повторяется дважды"
     }
 }
+
+
+
