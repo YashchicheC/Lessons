@@ -4,33 +4,32 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class GroupOfStudents
 {
-   static int rand;
-   public static ArrayList<StudentData> listOfStudent = new ArrayList<>();
+   private int rand;
+   private ArrayList<StudentData> listOfStudent = new ArrayList<>();
 
-    public static void main(String[] args)
-    {
-        FillingGroup();
-        RandomHeadman(rand);
-        AddStudent(006, "Vasya", "Pupkin");
-        DeleteStudent(001);
-        RenameStudent(006, "Sysan", "Pupkini");
-        ChangeHeadman(003);
-        NewHometask("do the new task");
-        HomeworkHasDone(3, true);
-        LookAllStudents();
+   public void setRand(int random){ this.rand = random;}
+    public int getRand() {return rand;}
+
+    public void setListOfStudent(ArrayList<StudentData> listOfStudent) {
+        this.listOfStudent = listOfStudent;
     }
-    private static void FillingGroup()
+
+    public ArrayList<StudentData> getListOfStudent() {
+        return listOfStudent;
+    }
+
+    public void fillingGroup()
     {
         listOfStudent.clear();
 
-        ArrayList <Integer> idLIst = new ArrayList<>(Arrays.asList(001,002,003,004,005));
-        ArrayList <String> nameList =  new ArrayList<>(Arrays.asList("Boris","Andrzei", "Egils", "Gitanas", "Alar"));
-        ArrayList <String> surnameList = new ArrayList<>(Arrays.asList("Johnson", "Duda", "Levits", "Nauseda","Karis"));
+       ArrayList <Integer> idLIst = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+       ArrayList <String> nameList =  new ArrayList<>(Arrays.asList("Boris","Andrzei", "Egils", "Gitanas", "Alar"));
+       ArrayList <String> surnameList = new ArrayList<>(Arrays.asList("Johnson", "Duda", "Levits", "Nauseda","Karis"));
 
         for (int i = 0; i < 5; i++) //произвольное, базовое количество студентов (к примеру 5)
         {
             StudentData  studData = new StudentData();
-            studData.student_ID = idLIst.get(i);
+            studData.setStudent_ID(idLIst.get(i));
             studData.name = nameList.get(i);
             studData.surname = surnameList.get(i);
             listOfStudent.add(studData);
@@ -38,69 +37,72 @@ public class GroupOfStudents
         rand  = ThreadLocalRandom.current().nextInt(0,  listOfStudent.size());
     }
 
-    private static void RandomHeadman (int random)
+
+    public void randomHeadman (int random)
     {
         listOfStudent.get(random).headman = true;
     }
 
-    private static void ChangeHeadman (int index)
+    public void changeHeadman (int index)
     {
         for (int i = 0; i < listOfStudent.size(); i++)
         {
-            if (index == listOfStudent.get(i).student_ID)
+            if (index == listOfStudent.get(i).getStudent_ID())
             {
                 listOfStudent.get(i).headman = true;
             }
             else listOfStudent.get(i).headman = false;
         }
     }
-    private static void AddStudent (int studentID, String studentName, String studentSurname)
+    public void addStudent (int studentID, String studentName, String studentSurname)
     {
         StudentData studData = new StudentData();
-        studData.student_ID = studentID;
+        studData.setStudent_ID(studentID);
         studData.name = studentName;
         studData.surname = studentSurname;
         listOfStudent.add(studData);
     }
-    private static void DeleteStudent (int studentID)
+    public void deleteStudent (int numberOfTheList)
     {
-        listOfStudent.remove(studentID);
+        listOfStudent.remove(numberOfTheList);
     }
-    private static void RenameStudent (int studentIndex, String studentNewName, String studentNewSurname)
+    public void renameStudent (int studentIndex, String studentNewName, String studentNewSurname)
     {
         for (int i = 0; i < listOfStudent.size(); i++)
         {
             StudentData studData = listOfStudent.get(i);
-            if (studData.student_ID == studentIndex)
+            if (studData.getStudent_ID() == studentIndex)
             {
                 listOfStudent.get(i).name = studentNewName;
                 listOfStudent.get(i).surname = studentNewSurname;
             }
         }
     }
-    private static void NewHometask (String newTask)
+    public void newHometask (String newTask)
     {
         for (int i = 0; i < listOfStudent.size(); i++)
         {
-            listOfStudent.get(i).item = newTask;
+            listOfStudent.get(i).item.add(newTask);
         }
     }
-    private static void HomeworkHasDone (int studentIndex, boolean yeap)
+    public void homeworkHasDone (int studentIndex, String whatYouDid, boolean yeap)
     {
 
         for (int i = 0; i < listOfStudent.size(); i++)
         {
-            if (listOfStudent.get(i).student_ID == studentIndex)
+
+            if (listOfStudent.get(i).getStudent_ID() == studentIndex && listOfStudent.get(i).item.contains(whatYouDid))
             {
                 listOfStudent.get(i).homework_done = yeap;
             }
         }
+
     }
-    private static void LookAllStudents ()
+    public void lookAllStudents ()
     {
         for (int i = 0; i < listOfStudent.size(); i++)
         {
-            System.out.println("ID: " + listOfStudent.get(i).student_ID + " Name: " + listOfStudent.get(i).name + " Surname: " + listOfStudent.get(i).surname + " Headman: " + listOfStudent.get(i).headman + " Homework has Done: " + listOfStudent.get(i).homework_done);
+            System.out.println("ID: " + listOfStudent.get(i).getStudent_ID() + " Name: " + listOfStudent.get(i).name + " Surname: " + listOfStudent.get(i).surname + " Headman: " + listOfStudent.get(i).headman + " Homework has Done: " + listOfStudent.get(i).homework_done);
         }
     }
 }
