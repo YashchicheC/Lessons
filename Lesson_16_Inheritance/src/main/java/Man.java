@@ -1,17 +1,7 @@
 public class Man extends Person
 {
-Person person = new Person("Black","Bullock", 61, false);
-
-
-int age = person.getAge();
-    @Override
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    @Override
-    public int getAge() {
-        return age;
+    public Man(String firstName, String lastName, int age){
+        super(firstName, lastName, age);
     }
 
     @Override
@@ -25,13 +15,9 @@ int age = person.getAge();
     }
 
     @Override
-    protected String registerPartnership(String newSurname) {
-        return person.firstName;
-    }
-
-    @Override
-    protected String deregisterPartnership(boolean areYouMarriedNow) {
-        return person.firstName;
+    protected String deregisterPartnership(Person other) {
+        super.deregisterPartnership(other);
+        return lastName;
     }
 
 }

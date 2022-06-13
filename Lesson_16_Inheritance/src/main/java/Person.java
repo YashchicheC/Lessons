@@ -1,16 +1,16 @@
-public class Person
+public abstract class Person
 {
    protected String firstName = "Base";
    protected String lastName = "New Base";
-   private int age = 18;
-   protected boolean partner;
+   protected int age = 18;
+   protected Person partner;
 
-  public Person (String firstName, String lastName, int age, boolean partner)
+  public Person (String firstName, String lastName, int age)
    {
       this.firstName = firstName;
       this.lastName = lastName;
       this.age = age;
-      this.partner = partner;
+
    }
    public Person(){}
 
@@ -22,6 +22,8 @@ public class Person
       return age;
    }
 
+   public String getLastName() {return lastName;}
+
    protected boolean isRetired (int ageOfPerson)
    {
       if (ageOfPerson > 60)
@@ -30,16 +32,19 @@ public class Person
       }
        return false;
    }
-    protected String registerPartnership (String newSurname)
+    protected String registerPartnership (Person person)
     {
-        lastName = newSurname;
+        this.partner = person;
         return lastName;
     }
-    protected String deregisterPartnership (boolean areYouMarriedNow)
+    protected String deregisterPartnership (Person other)
     {
-        if (areYouMarriedNow == false)
+        if (partner != null && other.partner != null && partner == other.partner)//We are married
         {
-            return firstName;
+            partner = null;
+            other.partner = null;
+
+            return lastName;
         }
         return lastName;
 
