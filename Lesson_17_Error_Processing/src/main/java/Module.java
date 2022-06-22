@@ -8,7 +8,7 @@ public class Module {
     public int paymentAmount;
     public String currency;
     public int statusCode;
-    
+
 
     public String processPayment(int paymentAmount, String currency, String clientID)
             throws InvalidPaymentCurrencyException, InvalidPaymentAmountException, BankProcessingFailedException {
