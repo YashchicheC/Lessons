@@ -12,4 +12,9 @@
             <class name="Test_Woman_Class"></class>>
         </classes>>
     </test>>
+    <test name="Test_3_Get/Set">
+        <classes>
+            <class name="Test_Getters_Setters"></class>>
+        </classes>>
+    </test>>
 </suite>
