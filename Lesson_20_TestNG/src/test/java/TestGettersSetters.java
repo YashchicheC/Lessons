@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class Test_Getters_Setters
+public class TestGettersSetters
 {
     @Test
     public void test_1_1_ManSetAge()    {

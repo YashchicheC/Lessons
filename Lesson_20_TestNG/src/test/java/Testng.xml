@@ -4,17 +4,12 @@
     <test name="Test_1">
         <classes>
          
-            <class name="Test_Man_Class"></class>>
+            <class name="TestManClass"></class>>
         </classes>>
     </test>>
     <test name="Test_2">
         <classes>
-            <class name="Test_Woman_Class"></class>>
-        </classes>>
-    </test>>
-    <test name="Test_3_Get/Set">
-        <classes>
-            <class name="Test_Getters_Setters"></class>>
+            <class name="TestWomanClass"></class>>
         </classes>>
     </test>>
 </suite>
