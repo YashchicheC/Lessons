@@ -40,16 +40,20 @@ public class Test_Man_Class
         assert newMan.isRetired(70);
     }
 
+    @Test
+    public void test_1_5_IsRetiredNegative()    {
+        assert newMan.isRetired(20);
+    }
 
     @Test
-    public void test_1_7_RegisterPartnership()    {
+    public void test_1_6_RegisterPartnership()    {
         newMan = new Man("", "", 0);
         newMan.registerPartnership(new Woman("Shoto", "Gdeto", 45));
         System.out.println(newMan.partner.firstName + newMan.partner.age);
     }
 
     @Test
-    public void test_1_8_DeegisterPartnership()    {
+    public void test_1_7_DeegisterPartnership()    {
         newMan.deregisterPartnership(newMan.partner);
     }
 }
