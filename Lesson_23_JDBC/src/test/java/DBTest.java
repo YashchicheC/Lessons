@@ -18,34 +18,33 @@ public class DBTest extends BaseTest {
             System.out.printf("Student: %s %s \n", rs.getString("first_name"), rs.getString("last_name"));
         }
     }
-   @Test
+    @Test
     public void baseInsert() throws SQLException {
         String sqlPattern = "INSERT INTO student VALUES (?, ?, ?)";
         PreparedStatement preparedStatement = getConnection().prepareStatement(sqlPattern);
-        preparedStatement.setInt(1, 3);
+        preparedStatement.setInt(1, 1);
         preparedStatement.setString(2, "New");
         preparedStatement.setString(3, "Blah");
 
-        System.out.printf("%d rows added", preparedStatement.executeUpdate());
+        System.out.printf("%d rows added", preparedStatement.executeQuery());
     }
 
     @Test
     public void baseUpdate() throws SQLException {
-        String sqlPattern = "INSERT INTO student VALUES (?, ?, ?)";
+        String sqlPattern = "UPDATE student SET first_name=? WHERE last_name=?";
         PreparedStatement preparedStatement = getConnection().prepareStatement(sqlPattern);
-        preparedStatement.setString(1, "Mykola");
-        preparedStatement.setInt(2, 3);
-        preparedStatement.setString(3, "Kovalchuk");
+        preparedStatement.setString(1, "New");
+        preparedStatement.setString(2, "Blah");
 
         int rows = preparedStatement.executeUpdate();
-        System.out.printf("%d rows added", rows);
+        System.out.printf("%d rows updated", rows);
     }
 
     @Test
     public void baseDelete() throws SQLException {
         String sqlPattern = "DELETE FROM student WHERE last_name=?";
         PreparedStatement preparedStatement = getConnection().prepareStatement(sqlPattern);
-        preparedStatement.setString(1, "Kovalchuk");
+        preparedStatement.setString(1, "Blah");
 
         int rows = preparedStatement.executeUpdate();
         System.out.printf("%d rows deleted", rows);
