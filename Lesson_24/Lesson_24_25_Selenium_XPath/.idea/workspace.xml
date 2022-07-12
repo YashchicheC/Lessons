@@ -46,11 +46,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaunchChrome.chromeSession" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LaunchChrome.addNewRecordInWebTables" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Lesson_24_25_Selenium_XPath" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LaunchChrome" />
-      <option name="METHOD_NAME" value="chromeSession" />
+      <option name="METHOD_NAME" value="addNewRecordInWebTables" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -82,12 +82,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LaunchChrome.elementsTextFromClickMe" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lesson_24_25_Selenium_XPath" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LaunchChrome" />
+      <option name="METHOD_NAME" value="elementsTextFromClickMe" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.LaunchChrome" />
+        <item itemvalue="TestNG.LaunchChrome.addNewRecordInWebTables" />
+        <item itemvalue="TestNG.LaunchChrome.elementsTextFromClickMe" />
         <item itemvalue="TestNG.LaunchChrome.chromeSession_2" />
         <item itemvalue="TestNG.LaunchChrome.chromeSession_1" />
-        <item itemvalue="TestNG.LaunchChrome.chromeSession" />
       </list>
     </recent_temporary>
   </component>
@@ -102,6 +115,7 @@
       <workItem from="1657537728880" duration="8222000" />
       <workItem from="1657609274742" duration="392000" />
       <workItem from="1657609697005" duration="403000" />
+      <workItem from="1657611522798" duration="9125000" />
     </task>
     <servers />
   </component>
