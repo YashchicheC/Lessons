@@ -34,10 +34,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager" selected="JUnit.Test_ContactSearch">
     <configuration name="Test_ContactSearch (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -88,7 +88,7 @@
       <workItem from="1658305109316" duration="2245000" />
       <workItem from="1658317105200" duration="2583000" />
       <workItem from="1658319941891" duration="1985000" />
-      <workItem from="1658324317386" duration="1281000" />
+      <workItem from="1658324317386" duration="2087000" />
     </task>
     <servers />
   </component>
