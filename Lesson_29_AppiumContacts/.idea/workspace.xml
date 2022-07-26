@@ -70,9 +70,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test_ContactSearch.searchContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson_28_29_Appium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.Test_ContactSearch" />
+      <option name="METHOD_NAME" value="searchContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_ContactSearch.searchContact_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson_28_29_Appium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.Test_ContactSearch" />
+      <option name="METHOD_NAME" value="searchContact_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_ContactSearch.searchContact_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson_28_29_Appium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.Test_ContactSearch" />
+      <option name="METHOD_NAME" value="searchContact_3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Test_ContactSearch" />
+        <item itemvalue="JUnit.Test_ContactSearch.searchContact_3" />
+        <item itemvalue="JUnit.Test_ContactSearch.searchContact_1" />
+        <item itemvalue="JUnit.Test_ContactSearch.searchContact" />
         <item itemvalue="JUnit.Test_ContactSearch (1)" />
       </list>
     </recent_temporary>
@@ -90,6 +152,7 @@
       <workItem from="1658319941891" duration="1985000" />
       <workItem from="1658324317386" duration="2087000" />
       <workItem from="1658479189776" duration="32000" />
+      <workItem from="1658838065342" duration="452000" />
     </task>
     <servers />
   </component>

@@ -24,4 +24,46 @@ public class Test_ContactSearch extends BaseTestClass {
         //Verify that correct page is displayed
         detailPage.assertContactName("Sara Alston");
     }
+    @Test
+    public void searchContact_1() {
+        //Search for contact
+        searchPage.search("Jenny");
+
+        //Verify result
+        searchPage.assertSearchResult("Jenny Cherry");
+
+        //Navigate to detail page
+        searchPage.navigateToSearchResultDetails();
+
+        //Verify that correct page is displayed
+        detailPage.assertContactName("Jenny Cherry");
+    }
+    @Test
+    public void searchContact_2() {
+        //Search for contact
+        searchPage.search("Nadia");
+
+        //Verify result
+        searchPage.assertSearchResult("Nadia Patten");
+
+        //Navigate to detail page
+        searchPage.navigateToSearchResultDetails();
+
+        //Verify that correct page is displayed
+        detailPage.assertContactName("Nadia Patten");
+    }
+    @Test
+    public void searchContact_3() {
+        //Search for contact
+        searchPage.search("Joy");
+
+        //Verify result
+        searchPage.assertSearchResult("Joy Stclair");
+
+        //Navigate to detail page
+        searchPage.navigateToSearchResultDetails();
+
+        //Verify that correct page is displayed
+        detailPage.assertContactName("Joy Stclair");
+    }
 }
