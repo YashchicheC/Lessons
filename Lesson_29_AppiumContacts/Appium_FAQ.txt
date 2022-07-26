@@ -1,0 +1,20 @@
+1 - установить Node.js (при установленной и настроеной Java и Intelij IDEA)
+2 - стянуть архив https://github.com/ThomasHansson/Appium-cross-platform-example
+3 - выполнить установку appium с консоли командой "npm install -g appium"
+4 - после скачивания установить "npm install -g appium-doctor"
+5 - после скаивания коммандой "appium-doctor" проверить валидность инсталла аппиума
+6 - портануть данные из архива в п.2 в проект
+7 - установить Android Studio (при установкее так же установить Android SDK Build Tools последней версии, Android SDK Commend-line, Anroid Emulator, Android SDK Platform-Tools)
+8 - в Android Studio - Tools -  AVD Manager - создать девайс для теста
+9 - в самой Windows (свойства системы - параметры среды) проверить вверху в "Переменные среды пользователя" чтоб были пути C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.1\bin и D:\IDE-Tools\apache-maven-3.8.4\bin. Снизу здесь же в "Системные переменные" добавить:
+- имя переменной: "ANDROID_HOME". Значение - "C:\Users\YashchiK\AppData\Local\Android\Sdk"
+- имя переменной: "USERNAME". Значение - "SYSTEM" (уже может быть установлено)
+10 - тут же, в параметрах среды, надо отредактировать PATH и добавить два значения:
+-%ANDROID_HOME%\platform-tools
+- %ANDROID_HOME%\tools
+11 - в POM проекта установить  junit/io.appium(java-client)/org.seleniumhq.selenium(selenium-java) последних версий. А так же, для апуска именно этого apk тут же установить  <maven.compiler.source>8</maven.compiler.source> и <maven.compiler.target>8</maven.compiler.target>
+12 - в Intelij IDEA - File - Project Structure - Project проверить, чтоб бы (если мы запускаем это старое apk) в строке SDK стояла версия corretto-1.8(если не установлена - сменить через EDIT)
+13 - в самом коде, что был скопирован из репозитория, заменить import io.appium.java_client.MobileElement; на import org.openqa.selenium.WebElement;
+14 -  в Intelij IDEA - File - Settings - в строку поиска вписать  "Android SDK"и перейти в нее. Так в строке "Android SDK Location вписать C:\Users\YashchiK\AppData\Local\Android\Sdk (или тапнуть на edit и выбрать из списка установленного) - и перезапускаем.
+15 - в  Intelij IDEA - Tools - должен появится "Android", а в нем AVD И SDK MANAGER. В AVD Manager создаем устройство (хотя может быть уже создано и подтянутся то, что создали в Android Studio)
+16 - если не помогло запустится до сих пор, в Intelij IDEA - File - Project Structure - Modules, удалить текущий проект и добавить его заново. Проверить, чтоб снизу прошло повторное скачивание обновления
