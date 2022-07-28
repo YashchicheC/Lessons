@@ -24,7 +24,7 @@ public class Test_ContactSearch extends BaseTestClass {
         //Verify that correct page is displayed
         detailPage.assertContactName("Sara Alston");
     }
-    @Test
+    /*@Test
     public void searchContact_1() {
         //Search for contact
         searchPage.search("Jenny");
@@ -66,4 +66,6 @@ public class Test_ContactSearch extends BaseTestClass {
         //Verify that correct page is displayed
         detailPage.assertContactName("Joy Stclair");
     }
+
+     */
 }
