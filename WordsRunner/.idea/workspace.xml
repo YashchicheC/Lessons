@@ -48,7 +48,7 @@
       <recent name="Steps" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Go to the home page of the site">
+  <component name="RunManager" selected="Cucumber Java.Feature: klavogonki">
     <configuration name="Feature: klavogonki" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/scenarios/klavogonki.feature" />
@@ -57,6 +57,26 @@
       <module name="WordsRunner.test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: klavogonki" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Bot launches the game and insert words" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/scenarios/klavogonki.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="WordsRunner.test" />
+      <option name="NAME_FILTER" value="^Bot launches the game and insert words$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Bot launches the game and insert words$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Bot launches the game and insert words" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -110,8 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Go to the home page of the site" />
         <item itemvalue="Cucumber Java.Feature: klavogonki" />
+        <item itemvalue="Cucumber Java.Scenario: Bot launches the game and insert words" />
+        <item itemvalue="Cucumber Java.Scenario: Go to the home page of the site" />
         <item itemvalue="Gradle.WordsRunner [dependencies]" />
       </list>
     </recent_temporary>
@@ -132,6 +153,9 @@
       <workItem from="1658843166695" duration="64000" />
       <workItem from="1658843258448" duration="3999000" />
       <workItem from="1658995782085" duration="17000" />
+      <workItem from="1659342547337" duration="641000" />
+      <workItem from="1659706540785" duration="4283000" />
+      <workItem from="1659711880902" duration="167000" />
     </task>
     <servers />
   </component>
