@@ -2,7 +2,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-public class StudentToGroup extends Student
+public class StudentToGroup
 {
     @JsonProperty
     public String name;

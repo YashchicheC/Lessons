@@ -6,6 +6,9 @@ import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasSize;
+
 public class ApiTest extends BaseTest
 {
     @Test (priority = 1)
@@ -54,46 +57,43 @@ public class ApiTest extends BaseTest
         Assert.assertEquals(allStudents.length, 3);
         System.out.println(Arrays.asList(allStudents));
     }
-
-    @Test(priority = 3)
-    public void addGroupPostRequest()
+    @Test (priority = 3)
+    public void postRequestCreateGroup()
     {
-        List<Student> arrayOfStudentsAsList = Arrays.asList //вытягиваем всех студентов, что созданы ранее в students в виде списка
-        (
-                RestAssured.get("/students")
-                .then().statusCode(200)
-                .extract().as(Student[].class)
+        List<Student> allStudents = Arrays.asList(RestAssured.get("/students")//----->забираем всех студентов из /students
+               .then().statusCode(200)
+               .extract().as(Student[].class)
         );
 
-        List<Integer> studentIdList = arrayOfStudentsAsList.stream().map(student -> student.id).toList(); // забираем со списка студентов только ID
+    List<Integer> studentIds = allStudents.stream().map(student -> student.id).toList();//------>непонятная штука для map, так как список нельзя передать/ Берем только ID
 
-        Response response = RestAssured.given()//отдаем на создание список с названием "NewGroup" и список ID студентов
-                .body(new StudentToGroup("NewGroup", studentIdList))
-                .post("/groups");
-        response.then().statusCode(200);
+    Response response = RestAssured.given()
+            .body(new StudentToGroup("NewGroup", studentIds))
+            .post("/groups");
+    response.then().statusCode(200);
+    Assert.assertEquals(response.as(Group.class).name, "NewGroup");
+    Assert.assertEquals(response.as(Group.class).students.size(), 3);
 
-        //Assert.assertEquals(response.as(StudentToGroup.class).name, "NewGroup");
-        Assert.assertEquals(response.as(StudentToGroup.class).students.size(), 3);
+    allStudents = Arrays.asList(
+            RestAssured.given()
+                    .queryParam("last_name", "ch")
+                    .when().get("/students")
+                    .then().statusCode(200)
+                    .extract().as(Student[].class)
+    );
 
+    studentIds = allStudents.stream().map(student -> student.id).toList();
 
-        studentIdList = arrayOfStudentsAsList.stream().map(student -> student.id).toList();
-        System.out.println(studentIdList);
-
-        //    StudentData [] arrayOfStudents = new StudentData[]{new StudentData("One", "Onest"),(new StudentData("Two", "Twost")),(new StudentData("Three", "Threest"))};
-
-        /*RestAssured.given()
-                .body(new StudentData ("One", "Onest"))
-                .post("/group")
-                .then().statusCode(200);
-
-        RestAssured.given()
-                .body(new StudentData("Two", "Twost"))
-                .post("/group")
-                .then().statusCode(200);
-
-       /* RestAssured.given()
-                .body(new StudentData("Three", "Threest"))
-                .post("/group")
-                .then().statusCode(200);*/
+    Group newGroup = RestAssured
+            .given().body(new StudentToGroup("HomeTask", studentIds))
+            .post("/groups")
+            .then().statusCode(200)
+            .body("name", equalTo("HomeTask"))
+            .body("students", hasSize(studentIds.size()))
+            .extract().as(Group.class);
+    Assert.assertEquals(newGroup.name, "HomeTask");
+    Assert.assertEquals(newGroup.students.size(), 1);
     }
+
 }
+

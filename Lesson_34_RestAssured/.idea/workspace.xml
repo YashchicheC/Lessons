@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="294d8c0c-80b6-4aa0-81cb-97c607c6412d" name="Changes" comment="" />
+    <list default="true" id="294d8c0c-80b6-4aa0-81cb-97c607c6412d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StudentToGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentToGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StudentToGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StudentToGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ApiTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +24,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DQfNay52nFcsQHOL8wO60OSvwM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,6 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -41,6 +53,18 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApiTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.addGroupPostRequest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lesson_34_RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApiTest" />
+      <option name="METHOD_NAME" value="addGroupPostRequest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -86,8 +110,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ApiTest" />
-        <item itemvalue="TestNG.ApiTest.postRequestThirdStudent" />
         <item itemvalue="TestNG.ApiTest.postRequestFirstTwoStudent" />
+        <item itemvalue="TestNG.ApiTest.addGroupPostRequest" />
+        <item itemvalue="TestNG.ApiTest.postRequestThirdStudent" />
         <item itemvalue="TestNG.ApiTest.createAndGetStudent" />
       </list>
     </recent_temporary>
@@ -103,10 +128,23 @@
       <workItem from="1660636204030" duration="1604000" />
       <workItem from="1661412295488" duration="4321000" />
       <workItem from="1661509541334" duration="9471000" />
+      <workItem from="1661573673070" duration="133000" />
+      <workItem from="1661573852206" duration="4911000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
