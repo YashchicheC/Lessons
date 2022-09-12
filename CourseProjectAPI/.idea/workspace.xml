@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40bcf913-1bab-4714-9546-044bc747ccee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/StudentTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/StudentTest3Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/Specification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RestAssuredYouTube/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RestAssuredYouTube/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RestAssuredYouTube/src/test/java/api/ReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RestAssuredYouTube/src/test/java/api/ReqresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/Tests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/GIT_Projects/Lessons/CourseProjectAPI",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GIT_Projects/Lessons/CourseProjectAPI&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.Tests.userGetTest2">
+}</component>
+  <component name="RunManager" selected="JUnit.Tests.studentPostTest3">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CourseProjectAPI" />
       <extension name="coverage">
@@ -63,6 +65,22 @@
       <option name="PACKAGE_NAME" value="api" />
       <option name="MAIN_CLASS_NAME" value="api.Tests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.studentPostTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CourseProjectAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.Tests" />
+      <option name="METHOD_NAME" value="studentPostTest3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,8 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.userGetTest2" />
+        <item itemvalue="JUnit.Tests.studentPostTest3" />
         <item itemvalue="JUnit.Tests.userPostTest1" />
+        <item itemvalue="JUnit.Tests.userGetTest2" />
         <item itemvalue="JUnit.Tests.userGetTest3" />
         <item itemvalue="JUnit.Tests" />
       </list>

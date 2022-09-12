@@ -14,6 +14,8 @@ public class Specification
         return new RequestSpecBuilder()
                 .setBaseUri(url)
                 .setContentType(ContentType.JSON)
+                .setAccept(ContentType.JSON)
+                .addHeader("session_token", "token")
                 .build();
     }
     public static ResponseSpecification responseSpec200()
