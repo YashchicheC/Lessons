@@ -13,12 +13,13 @@ import static io.restassured.RestAssured.given;
 
 public class ReqresTest
 {
+    /** из видео https://www.youtube.com/watch?v=gxzXOMxIt4w&t */
     private final static String URL = "https://reqres.in/";
 
     @Test
     public void checkAvatarAndIdTest()
     {
-      /*  ЗАДАНИЕ (через GET)
+      /**  ЗАДАНИЕ (через GET)
                 1.Используя сервис https://reqres.in/ получить список пользователей с api/users?page=2"
                 2. Убедится что имена файлов-аватаров совпадают с id пользователя
                 3. Убедится, что email пользователей имеет окончание reqres.in*/
@@ -44,7 +45,7 @@ public class ReqresTest
     @Test
     public void successRegTest()
     {
-         /*  ЗАДАНИЕ (через POST)
+         /**  ЗАДАНИЕ (через POST)
                 1.Используя сервис https://reqres.in/ протестировать решистрацию пользователя в системе
                 2. Необходимо создание 2 тестов:
                 - успешная регистрация
@@ -87,7 +88,7 @@ public class ReqresTest
     @Test
     public void dataByYears()
     {
-         /*  ЗАДАНИЕ (через GET)
+         /**  ЗАДАНИЕ (через GET)
                 1.Используя сервис https://reqres.in/ убедится, что операция LIST <RESOURCE> возвращает данные
                 2. Данные долэны быть отсортированы по годам
                 3. Request для данного запроса по линке /api/unknown*/
@@ -108,7 +109,7 @@ public class ReqresTest
     @Test
     public void deleteUserTest()
     {
-         /*  ЗАДАНИЕ (через DELETE)
+         /**  ЗАДАНИЕ (через DELETE)
                 1.Используя сервис https://reqres.in/ попробовать удалить второго пользователя и сравнить статус-код*/
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseUniqueCode(204));
         given()
@@ -120,7 +121,7 @@ public class ReqresTest
     @Test
     public void updateLocalTime()
     {
-         /*  ЗАДАНИЕ
+         /**  ЗАДАНИЕ
                 1.Используя сервис https://reqres.in/ обновить информацию о пользователе и сравнить дату обновления с текущей датой на компьютере*/
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseUniqueCode(204));
         given()

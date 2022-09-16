@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="253a342c-310b-4acd-83bf-a718514cf441" name="Changes" comment="" />
+    <list default="true" id="253a342c-310b-4acd-83bf-a718514cf441" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lesson_34_RestAssured/.idea/Lesson_34_RestAssured.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/ReqresNoPojoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CourseProjectAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CourseProjectAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/ReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/ReqresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/api/ReqresTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/api/ReqresTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,30 +25,28 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2E4HLGn0rQCfxHALxyemRPQg8wP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunManager" selected="JUnit.ReqresTest.timeTest">
-    <configuration name="ReqresTest.DataByYears" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/GIT_Projects/Lessons/RestAssuredYouTube"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.ReqresNoPojoTest.unsuccessUserRegNOPojo">
+    <configuration name="ReqresNoPojoTest.checkAvatarsNoPojoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredYouTube" />
       <extension name="coverage">
         <pattern>
@@ -49,14 +55,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.ReqresTest" />
-      <option name="METHOD_NAME" value="DataByYears" />
+      <option name="MAIN_CLASS_NAME" value="api.ReqresNoPojoTest" />
+      <option name="METHOD_NAME" value="checkAvatarsNoPojoTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReqresTest.deleteUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReqresNoPojoTest.postRequestSuccessUserRegNoPojo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredYouTube" />
       <extension name="coverage">
         <pattern>
@@ -65,14 +71,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.ReqresTest" />
-      <option name="METHOD_NAME" value="deleteUserTest" />
+      <option name="MAIN_CLASS_NAME" value="api.ReqresNoPojoTest" />
+      <option name="METHOD_NAME" value="postRequestSuccessUserRegNoPojo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReqresTest.negativeRegTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReqresNoPojoTest.unsuccessUserRegNOPojo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredYouTube" />
       <extension name="coverage">
         <pattern>
@@ -81,14 +87,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.ReqresTest" />
-      <option name="METHOD_NAME" value="negativeRegTest" />
+      <option name="MAIN_CLASS_NAME" value="api.ReqresNoPojoTest" />
+      <option name="METHOD_NAME" value="unsuccessUserRegNOPojo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReqresTest.successRegTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReqresTest.checkAvatarAndIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredYouTube" />
       <extension name="coverage">
         <pattern>
@@ -98,7 +104,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="api" />
       <option name="MAIN_CLASS_NAME" value="api.ReqresTest" />
-      <option name="METHOD_NAME" value="successRegTest" />
+      <option name="METHOD_NAME" value="checkAvatarAndIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReqresNoPojoTest.unsuccessUserRegNOPojo" />
+        <item itemvalue="JUnit.ReqresNoPojoTest.postRequestSuccessUserRegNoPojo" />
+        <item itemvalue="JUnit.ReqresNoPojoTest.checkAvatarsNoPojoTest" />
+        <item itemvalue="JUnit.ReqresTest.checkAvatarAndIdTest" />
         <item itemvalue="JUnit.ReqresTest.timeTest" />
-        <item itemvalue="JUnit.ReqresTest.deleteUserTest" />
-        <item itemvalue="JUnit.ReqresTest.DataByYears" />
-        <item itemvalue="JUnit.ReqresTest.negativeRegTest" />
-        <item itemvalue="JUnit.ReqresTest.successRegTest" />
       </list>
     </recent_temporary>
   </component>
@@ -147,5 +153,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
