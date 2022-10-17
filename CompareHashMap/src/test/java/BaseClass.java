@@ -11,11 +11,14 @@ abstract public class BaseClass
          */
         public void setUp()
         {
+          /* WebDriverManager.firefoxdriver().setup();
+            Configuration.browser = "firefox";*/
             WebDriverManager.chromedriver().setup();
             Configuration.browser = "chrome";
             Configuration.driverManagerEnabled = true;
             Configuration.browserSize = "1920x1080";
             Configuration.headless = false;
+         //  Configuration.holdBrowserOpen = true; //оставляет браузер открытым
         }
         /**
          * Выполнением метода перед каждым запуском тестов
