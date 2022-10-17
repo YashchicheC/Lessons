@@ -16,10 +16,11 @@ public class SiteForHashMapTest extends BaseClass
         ResumePage ResumePageExemplar = new ResumePage(URLforUkr); //создание экземпляра класса
         boolean t = ResumePageExemplar.chtoto(); //как пример, вызов пустого класса из экземпляра
         Map<String, Object> expectedAtributes = new HashMap<>();
-        expectedAtributes.put(ResumePage.proverkaGorodaDlyaMap, "Київ");
+        expectedAtributes.put(ResumePage.proverkaGorodaDlyaMap, "Вінниця");
         expectedAtributes.put(ResumePage.proverkaDateDlyaMap, "13 жовтня 2022");
         expectedAtributes.put(ResumePage.proverkaVacansiiDlyaMap, true);
 
+        System.out.println(expectedAtributes.get(ResumePage.proverkaDateDlyaMap));
         Map<String, Object> actualAttributes = ResumePageExemplar.getAttributes();
         Assert.assertEquals(expectedAtributes, actualAttributes);
 
