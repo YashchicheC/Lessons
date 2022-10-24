@@ -11,8 +11,7 @@ public class SiteForHashMapTest extends BaseClass
     private final static String URLforUkr = "https://jobs.dou.ua/companies/avenga/vacancies/220928/?from=rs";
 
     @Test
-    public void CheckAttributesHashMap()
-    {
+    public void CheckAttributesHashMap() {
         ResumePage ResumePageExemplar = new ResumePage(URLforUkr); //создание экземпляра класса
         boolean t = ResumePageExemplar.chtoto(); //как пример, вызов пустого класса из экземпляра
         Map<String, Object> expectedAtributes = new HashMap<>();
